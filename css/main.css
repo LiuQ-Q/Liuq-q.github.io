@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+
+}
+
+/*第一屏 S*/
+.first {
+  background: url(../images/bg1.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.first .first-cover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(222,222,222,0.3);
+}
+
+/*第一屏动画*/
+.current.first img {
+
+}
+
+/*第二屏*/
+.second {
+  background: url(../images/bg2.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/*第二屏动画*/
+.current.second img {
+
+}
+
+/*第三屏*/
+.third {
+  background: url(../images/bg2.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/*第三屏动画*/
+.current.third .rocket {
+
+}
+
+/*第四屏*/
+.fourth {
+  background: url(../images/bg2.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/*第四屏动画*/
+.current.fourth .search {
+
+}
+
+/*第五屏*/
+.fifth {
+  background: url(../images/bg2.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
