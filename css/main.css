@@ -1,23 +1,167 @@
+/* global */
 * {
     margin: 0;
     padding: 0;
 }
 
-.section {
-
+body {
+  height: 100%;
+  position: relative;
+  font: 18px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  background: #f2f2f2;
+  color: #000;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+  float: left;
+}
+
+.logo-img,
+.logo-resume {
+  float: left;
+}
+
+.logo-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 10px 50px;
+  transition: all 0.5s;
+}
+
+.logo-img img:hover {
+  box-shadow: 0 0 30px #0000ff;
+}
+
+.logo-resume {
+  text-align: center;
+  color: #000;
+  margin-top: 7px;
+  margin-left: -5px;
+}
+
+.logo-resume .resume-p1 {
+  border-bottom: 2px solid #333;
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.logo-resume .resume-p2 {
+  margin-top: -2px;
+}
+
+header nav {
+  float: right;
+  margin-right: 50px;
+}
+
+header ul li {
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  padding: 0 30px;
+}
+
+header ul a {
+  position: relative;
+  color: #000;
+}
+
+header ul a:after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: #16a5d4;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.2s ease-in
+}
+
+header ul a:hover {
+  text-decoration:none;
+  color: #107bb3;
+}
+
+header ul a:hover:after {
+  bottom: -30px;
+  width: 40px;
+  opacity: 1;
+}
+
 
 /*第一屏 S*/
 .first {
   background: url(../images/bg1.jpg) 0 0 no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: relative;
 }
 .first .first-cover {
   height: 100%;
   width: 100%;
-  background-color: rgba(222,222,222,0.3);
+  background-color: rgba(222,222,222,0.5);
 }
+
+.first .first-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.first .content-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-top: 11%;
+}
+.first .content-info {
+  margin-top: 30px;
+}
+.first .content-info .content-info1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "KaiTi";
+  color: #000;
+}
+.first .content-info-line {
+  display: inline-block;
+  width: 40%;
+  height: 2px;
+  background-color: #16a5d4;
+  margin-bottom: 17px;
+}
+.first .info-box {
+  margin-top: 20px;
+}
+
+
+
 
 /*第一屏动画*/
 .current.first img {
