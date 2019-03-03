@@ -244,7 +244,7 @@ header ul a:hover:after {
   }
   .second .content-info {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -280,11 +280,6 @@ header ul a:hover:after {
 }
 
 /*第五屏*/
-.fifth {
-  background: url(../images/bg2.jpg) 0 0 no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
 
 
 
