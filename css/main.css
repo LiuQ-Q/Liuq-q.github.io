@@ -255,28 +255,242 @@ header ul a:hover:after {
 }
 
 /*第三屏*/
-/*.third {
-  background: url(../images/bg2.jpg) 0 0 no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}*/
 .third {
   background: url(../images/bg.png) #109085;
 }
+.third .third-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.third .third-content .content-title {
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.third .third-content .content-skill {
+  height: 400px;
+  width: 50%;
+  float: left;
+  position: relative;
+  /*margin-left: 20%;*/
+}
+.third .content-skill .skill-in {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px dashed #0000ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+.third .content-skill .skill-in li {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+}
+.third .content-skill .skill-in li:nth-child(1) {
+  animation: html 10s linear infinite;
+  background-color: rgba(255,255,255,0.5);
+}
+.third .content-skill .skill-in li:nth-child(2) {
+  animation: css 10s linear infinite;
+  background-color: rgba(140,10,85,0.5);
+}
+.third .content-skill .skill-in li:nth-child(3) {
+  animation: js 10s linear infinite;
+  background-color: rgba(20,40,220,0.5);
+}
+.third .content-skill .skill-out {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 2px solid #7f4a82;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+}
+.third .content-skill .skill-out li {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  position: absolute;
+  top: 160px;
+  left: 160px;
+}
+.third .content-skill .skill-out li:nth-child(1){
+  animation: jq 15s linear infinite;
+  background-color: rgba(255,0,0,0.5);
+}
+.third .content-skill .skill-out li:nth-child(2){
+  animation: ajax 15s linear infinite;
+  background-color: rgba(255,150,0,0.5);
+}
+.third .content-skill .skill-out li:nth-child(3){
+  animation: json 15s linear infinite;
+  background-color: rgba(255,255,0,0.5);
+}
+.third .content-skill .skill-out li:nth-child(4){
+  animation: ps 15s linear infinite;
+  background-color: rgba(0,255,0,0.5);
+}
+.third .content-skill .skill-out li:nth-child(5){
+  animation: h5 15s linear infinite;
+  background-color: rgba(0,255,255,0.5);
+}
+.third .content-skill .skill-out li:nth-child(6){
+  animation: c3 15s linear infinite;
+  background-color: rgba(0,0,255,0.5);
+}
+.third .content-skill .skill-out li:nth-child(7){
+  animation: vue 15s linear infinite;
+  background-color: rgba(255,0,255,0.5);
+}
+
+.third .third-content .content-info {
+  float: left;
+  font-size: 23px;
+  width: 50%;
+  /*margin-left: 200px;*/
+  margin-top: 35px;
+}
+.third .third-content .content-info p {
+  text-align: left;
+}
+
 
 /*第三屏动画*/
-.current.third .rocket {
-
+@keyframes html {
+  from {
+    transform: rotate(0deg) translateY(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateY(100px) rotate(360deg);
+  }
 }
+@keyframes css {
+  from {
+    transform: rotate(0deg) translate(86px,-50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translate(86px,-50px) rotate(360deg);
+  }
+}
+@keyframes js {
+  from {
+    transform: rotate(0deg) translate(-86px,-50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translate(-86px,-50px) rotate(360deg);
+  }
+}
+@keyframes jq {
+  from {
+    transform: rotate(0deg) translate(200px,0) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(200px,0) rotate(-360deg);
+  }
+}
+@keyframes ajax {
+  from {
+    transform: rotate(0deg) translate(116px,158px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(116px,158px) rotate(-360deg);
+  }
+}
+@keyframes json {
+  from {
+    transform: rotate(0deg) translate(-53px,188px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-53px,188px) rotate(-360deg);
+  }
+}
+@keyframes ps {
+  from {
+    transform: rotate(0deg) translate(-182px,82px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-182px,82px) rotate(-360deg);
+  }
+}
+@keyframes h5 {
+  from {
+    transform: rotate(0deg) translate(-176px,-99px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-176px,-99px) rotate(-360deg);
+  }
+}
+@keyframes c3 {
+  from {
+    transform: rotate(0deg) translate(-30px,-198px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-30px,-198px) rotate(-360deg);
+  }
+}
+@keyframes vue {
+  from {
+    transform: rotate(0deg) translate(131px,-151px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(131px,-151px) rotate(-360deg);
+  }
+}
+
+/* 第三屏媒体查询 */
+@media screen and (max-width: 768px) {
+  .third .third-content .content-title,
+  .third .third-content .content-skill,
+  .third .third-content .content-info
+  {
+    transform: scale(0.5);
+  }
+}
+
+
 
 /*第四屏*/
 .fourth {
   background: url(../images/bg.png) #DEDEDE;
 }
+.fourth .fourth-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.fourth .fourth-content .content-title {
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+
+
 
 /*第四屏动画*/
-.current.fourth .search {
-
+.fifth {
+  background: url(../images/bg.png) #107bb3;
 }
 
 /*第五屏*/
