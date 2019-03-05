@@ -28,7 +28,40 @@ $(function() {
 
   autoScrolling();*/
 
+  /* 第四页点击切换 */
+  $('.content-prev').click(function() {
+    var myIndex
 
+    for (var i = 0; i < $('.product').length; i++) {
+      if ($('.product').eq(i).hasClass('current')) {
+        if (i - 1 < 0) {
+          myIndex = $('.product').length - 1
+        } else {
+          myIndex = i - 1
+        }
+      }
+    }
+
+    // console.log($('.product').eq(1).hasClass('current'))
+    $('.product').removeClass('current')
+    $('.product').eq(myIndex).addClass('current')
+  });
+  $('.content-next').click(function() {
+    var myIndex
+
+    for (var i = 0; i < $('.product').length; i++) {
+      if ($('.product').eq(i).hasClass('current')) {
+        if (i + 1 > $('.product').length - 1) {
+          myIndex = 0
+        } else {
+          myIndex = i + 1
+        }
+      }
+    }
+
+    $('.product').removeClass('current')
+    $('.product').eq(myIndex).addClass('current')
+  });
 
 
 

@@ -256,7 +256,7 @@ header ul a:hover:after {
 
 /*第三屏*/
 .third {
-  background: url(../images/bg.png) #109085;
+  background: url(../images/bg.png) #DEDEDE;
 }
 .third .third-content {
   height: 100%;
@@ -301,7 +301,7 @@ header ul a:hover:after {
 }
 .third .content-skill .skill-in li:nth-child(1) {
   animation: html 10s linear infinite;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(100,100,0,0.5);
 }
 .third .content-skill .skill-in li:nth-child(2) {
   animation: css 10s linear infinite;
@@ -309,7 +309,7 @@ header ul a:hover:after {
 }
 .third .content-skill .skill-in li:nth-child(3) {
   animation: js 10s linear infinite;
-  background-color: rgba(20,40,220,0.5);
+  background-color: rgba(20,40,100,0.5);
 }
 .third .content-skill .skill-out {
   height: 400px;
@@ -467,7 +467,7 @@ header ul a:hover:after {
 
 /*第四屏*/
 .fourth {
-  background: url(../images/bg.png) #DEDEDE;
+  background: url(../images/bg.png) #109085;
 }
 .fourth .fourth-content {
   height: 100%;
@@ -475,7 +475,7 @@ header ul a:hover:after {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-52%);
   text-align: center;
 }
 .fourth .fourth-content .content-title {
@@ -484,14 +484,72 @@ header ul a:hover:after {
   font-weight: bold;
   margin-bottom: 80px;
 }
-
-
+.fourth .fourth-content .content-product {
+  width: 1000px;
+  height: 320px;
+  margin: 0 auto;
+  background-image: url(../images/exp_list_bg.jpg);
+  border-radius: 30px;
+  text-align: left;
+  position: relative;
+}
+.fourth-content .content-product h4 {
+  font-size: 20px;
+  color: #109085;
+  font-weight: bold;
+  padding: 30px 0 10px 115px;
+}
+.fourth-content .content-product p {
+  font-size: 18px;
+  color: #107bb3;
+  padding: 0px 0 10px 60px;
+}
+.fourth-content .content-product ul {
+  font-size: 14px;
+  color: #000;
+  padding: 0px 0 10px 60px;
+}
+.fourth-content .content-product li {
+  margin-top: 10px;
+}
+.fourth-content .content-product .product {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  /*transform: translateZ(0)*/
+}
+.fourth-content .content-product .product.current {
+  opacity: 1;
+  /*transform: translateZ(0)*/
+}
+.fourth-content .content-product .content-prev,
+.fourth-content .content-product .content-next {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.fourth-content .content-product .content-prev {
+  background-image: url(../images/exp_list_toleft.png);
+  left: 0px;
+}
+.fourth-content .content-product .content-next {
+  background-image: url(../images/exp_list_toright.png);
+  right: 330px;
+}
 
 
 /*第四屏动画*/
 .fifth {
   background: url(../images/bg.png) #107bb3;
 }
+
+
+
 
 /*第五屏*/
 
