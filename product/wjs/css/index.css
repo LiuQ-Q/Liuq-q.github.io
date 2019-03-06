@@ -125,7 +125,7 @@ a:hover{
     color: #666;
     font-size: 12px;
     position: relative;
-    z-index: 1001;
+    z-index: 11;
 }
 .wjs_header .wjs_app{
     color: #666;
@@ -137,6 +137,7 @@ a:hover{
 }
 .wjs_header .wjs_app img{
     display: none;
+    z-index: 1003;
 }
 .wjs_header .wjs_app:hover img{
     display: block;
@@ -168,7 +169,7 @@ a:hover{
     border: none;
     border-bottom: 1px solid #ccc;
     margin-bottom: 0;
-    z-index: 1001;
+    z-index: 10;
     border-radius: 0;
     width: 100%;
     top: 0;

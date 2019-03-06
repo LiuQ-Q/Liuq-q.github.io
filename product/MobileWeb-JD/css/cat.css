@@ -1,0 +1,341 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-11-21 17:28:49
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-11-22 16:58:10
+*/
+.body {
+	background: #f5f5f5;
+}
+
+.jd_topBar {
+	position: static;
+}
+
+/* 安全提示 */
+.jd_safeTip {
+	height: 34px;
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.jd_safeTip p {
+	position: relative;
+	display: inline-block;
+	padding-left: 23px; 
+}
+
+.jd_safeTip p::before {
+	content: '';
+	position: absolute;
+	background: url(../images/safe_icon.png) no-repeat;
+	-webkit-background-size: 18px 18px;
+	background-size: 18px 18px;
+	width: 18px;
+	height: 18px;
+	top: 8px;
+	left: 0;
+}
+
+/* 公用的复选框 */
+.check_box {
+	width: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.check_box .jd_check_box {
+	height: 34px;
+	width: 40px;
+	padding: 7px 10px;
+	background: url(../images/shop-icon.png) no-repeat;
+	-webkit-background-size: 50px 100px;
+	background-size: 50px 100px;
+	background-position: 0 0;
+	display: block;
+	background-origin: content-box;
+	background-clip: content-box;
+}
+
+.check_box .jd_check_box[checked] {
+	background-position: -25px 0;
+}
+
+
+
+/* 店铺 */
+.jd_shop {
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
+	margin-top: 10px;
+
+}
+
+.jd_shop .jd_shop_tit {
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+}
+
+.jd_shop .jd_shop_tit .jd_shop_tit_right {
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+.jd_shop .jd_shop_tit .jd_shop_tit_right img {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-top: 9px;
+}
+
+.jd_shop .jd_shop_tit .jd_shop_tit_right .shop_name {
+	float: left;
+	font-size: 15px;
+	margin-left: 5px;
+	color: #666;
+}
+
+.jd_shop .jd_shop_con {
+
+}
+
+/*商品*/
+.product_box {
+	height: 100px;
+	border-top: 1px solid #e0e0e0;
+	position: relative;
+	padding: 10px 0;
+}
+
+.product_box .product_box_right {
+	padding-left: 40px;
+}
+
+.product_box .product_box_right .img_box {
+	height: 80px;
+	width: 80px;
+	float: left;
+} 
+
+.product_box .product_box_right .img_box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.product_box .product_box_right .info_box {
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+/*商品信息*/
+.info_box .name {
+	width: 100%;
+	height: 30px;
+	line-height: 15px;
+	overflow: hidden;
+	display: block;
+}
+
+.info_box .price {
+	color: #d8505c;
+	font-size: 12px;
+	padding: 4px 0;
+}
+
+.info_box .option {
+
+}
+
+.info_box .option .change_box {
+	float: left;
+}
+
+.info_box .option .change_box span {
+	float: left;
+	width: 32px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	border: 1px solid #ccc;
+}
+
+.info_box .option .change_box span:first-of-type {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.info_box .option .change_box span:last-of-type {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.info_box .option .change_box input {
+	float: left;
+	width: 32px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.info_box .option .delete_box {
+	float: right;
+
+}
+
+.info_box .option .delete_box span:first-child {
+	background: url(../images/delete_up.png) no-repeat;
+	width: 20px;
+	height: 5px;
+	background-size: 20px 5px;
+	display: block;
+	margin-left: -1px;
+}
+
+.info_box .option .delete_box span:last-child {
+	background: url(../images/delete_down.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	background-size: 18px 18px;
+	display: block;
+	margin-top: -2px;
+}
+
+/*弹出框*/
+.jd_win {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 100;
+	display: none;
+}
+
+.jd_win .jd_win_box {
+	width: 80%;
+	background: #fff;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 200px;
+	padding: 0 10px;
+}
+
+.jd_win .jd_win_box .text_box {
+	text-align: center;
+	font-size: 18px;
+	line-height: 75px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.jd_win .jd_win_box .btn_box {
+	padding: 10px 0;
+	
+}
+
+
+.jd_win .jd_win_box .btn_box a {
+	width: 45%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	float: left;
+	border-radius: 4px;
+}
+
+.jd_win .jd_win_box .btn_box .cancel {
+	border: 1px solid #e0e0e0;
+	margin-right: 10%;
+
+}
+
+.jd_win .jd_win_box .btn_box .submit {
+	background: #d8505c;
+	color: #fff;
+}
+
+.jd_win .jd_win_box.bounceInDown {
+	animation: bounceInDown 1s;
+	-webkit-animation: bounceInDown 1s;
+}
+
+/*bounceInDown*/
+@keyframes bounceInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-3000px);
+		transform: translateY(-3000px);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+	}
+
+	75% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	90% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@-webkit-keyframes bounceInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-3000px);
+		transform: translateY(-3000px);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+	}
+
+	75% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	90% {
+		-webkit-transform: translateY(5px);
+		transform: translateY(5px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

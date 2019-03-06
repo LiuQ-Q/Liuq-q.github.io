@@ -28,6 +28,14 @@ $(function() {
 
   autoScrolling();*/
 
+  /* nav 中的跳转 */
+  $('.header-product').click(function() {
+    $.fn.fullpage.moveTo( 4 );
+  });
+  $('.header-about').click(function() {
+    $.fn.fullpage.moveTo( 5 );
+  });
+
   /* 第四页点击切换 */
   $('.content-prev').click(function() {
     var myIndex

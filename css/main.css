@@ -513,6 +513,8 @@ header ul a:hover:after {
   margin-top: 10px;
 }
 .fourth-content .content-product .product {
+  width: 100%;
+  height: 100%;
   transition: all 0.5s ease;
   position: absolute;
   top: 0px;
@@ -523,6 +525,7 @@ header ul a:hover:after {
 .fourth-content .content-product .product.current {
   opacity: 1;
   /*transform: translateZ(0)*/
+  z-index: 10
 }
 .fourth-content .content-product .content-prev,
 .fourth-content .content-product .content-next {
@@ -532,6 +535,7 @@ header ul a:hover:after {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  z-index: 11;
 }
 .fourth-content .content-product .content-prev {
   background-image: url(../images/exp_list_toleft.png);
@@ -541,19 +545,109 @@ header ul a:hover:after {
   background-image: url(../images/exp_list_toright.png);
   right: 330px;
 }
-
+.fourth-content .content-product a {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  left: 50px;
+  bottom: 25px;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.fourth-content .content-product a img {
+  width: 50px;
+  margin: 0 auto;
+}
+.fourth-content .content-product .product a:hover {
+  background-color: #aaaaaa;
+}
 
 /*第四屏动画*/
+
+/*第五屏*/
 .fifth {
   background: url(../images/bg.png) #107bb3;
 }
+.fifth .fifth-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-52%);
+  text-align: center;
+}
+.fifth .fifth-content .content-title {
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.fifth .fifth-content .content-info {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
 
-
-
-
-/*第五屏*/
-
-
+}
+.fifth .fifth-content .content-info ul {
+  width: 500px;
+  height: 80px;
+  margin: 0 auto;
+}
+.fifth .fifth-content .content-info li {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 0px 0px 50px;
+}
+.fifth .fifth-content .content-info li:nth-child(1) {
+  color: red;
+}
+.fifth .fifth-content .content-info li:nth-child(2) {
+  color: yellow;
+}
+.fifth .fifth-content .content-info li:nth-child(3) {
+  color: purple;
+}
+.fifth .fifth-content .content-info li:nth-child(4) {
+  color: blue;
+}
+.fifth .fifth-content .content-info p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.fifth .fifth-content .content-info p:nth-child(1) {
+  margin-top: 50px;
+}
+.fifth .fifth-content .info-tel,
+.fifth .fifth-content .info-email {
+  margin-top: 20px;
+  display: inline-block;
+}
+.fifth .fifth-content .info-email {
+  padding-left: 30px;
+}
+.fifth .fifth-content .info-border1 {
+  height: 80px;
+  width: 140px;
+  border-top: 5px solid pink;
+  border-right: 5px solid pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fifth .fifth-content .info-border2 {
+  height: 30px;
+  width: 500px;
+  border-bottom: 5px solid pink;
+  border-left: 5px solid pink;
+  border-right: 5px solid pink;
+  position: absolute;
+  bottom: -35px;
+  left: 0px;
+}
 
 
 
