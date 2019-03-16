@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 
 	/* fullPage 插件配置 */
 	$('#fullPage').fullpage({
@@ -16,7 +16,7 @@ $(function() {
 	/*$(window).resize(function(){
     autoScrolling();
   });
-
+   
   function autoScrolling(){
     var $ww = $(window).width();
     if($ww < 992){
