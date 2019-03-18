@@ -11,7 +11,7 @@ body {
   background: #f2f2f2;
   color: #000;
 }
-   
+
 a {
   text-decoration: none;
   color: #000;
@@ -160,9 +160,15 @@ header ul a:hover:after {
   margin-top: 20px;
 }
 
-/*第一屏动画*/
-.current.first img {
-
+/*第一屏媒体查询*/
+@media screen and (max-width: 768px) {
+  .first .content-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 37%;
+    opacity: 1;
+  }
 }
 
 /* 第二屏 */
@@ -185,7 +191,7 @@ header ul a:hover:after {
   margin-bottom: 80px;
 }
 .second .content-about {
-  
+
 }
 .second .content-about ul {
   display: inline-block;
