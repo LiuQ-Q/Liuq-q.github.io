@@ -284,7 +284,6 @@ header ul a:hover:after {
   width: 50%;
   float: left;
   position: relative;
-  /*margin-left: 20%;*/
 }
 .third .content-skill .skill-in {
   height: 200px;
@@ -369,7 +368,6 @@ header ul a:hover:after {
   float: left;
   font-size: 23px;
   width: 50%;
-  /*margin-left: 200px;*/
   margin-top: 35px;
 }
 .third .third-content .content-info p {
@@ -461,11 +459,30 @@ header ul a:hover:after {
 
 /* 第三屏媒体查询 */
 @media screen and (max-width: 768px) {
-  .third .third-content .content-title,
-  .third .third-content .content-skill,
-  .third .third-content .content-info
+  .third .third-content .content-title {
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .third .third-content .content-skill
   {
     transform: scale(0.5);
+    width: 100%;
+    float: none;
+    margin-top: -85px;
+  }
+  .third .content-skill .skill-in,
+  .third .content-skill .skill-out {
+    transform: translate(-50%, -50%);
+  }
+  .third .third-content .content-info {
+    float: none;
+    font-size: 13px;
+    width: 100%;
+    margin-top: -65px;
+  }
+  .third .third-content .content-info p {
+    text-align: center;
   }
 }
 
@@ -570,7 +587,38 @@ header ul a:hover:after {
   background-color: #aaaaaa;
 }
 
-/*第四屏动画*/
+/*第四屏媒体查询*/
+@media screen and (max-width: 768px) {
+  .fourth .fourth-content .content-title {
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .fourth-content .content-product {
+    /*transform: scale(0.5);*/
+  }
+  .fourth .fourth-content .content-product {
+    width: 100%;
+    height: 450px;
+  }
+  .fourth-content .content-product .content-prev,
+  .fourth-content .content-product .content-next {
+    top: 100%;
+    transform: none;
+  }
+  .fourth-content .content-product .content-next {
+    right: 0;
+  }
+  .fourth-content .content-product h4 {
+    padding: 30px 0 10px 0px;
+    text-align: center;
+  }
+  .fourth-content .content-product p,
+  .fourth-content .content-product ul {
+    padding: 0px 0 10px 15px;
+  }
+
+}
 
 /*第五屏*/
 .fifth {
@@ -655,7 +703,32 @@ header ul a:hover:after {
   left: 0px;
 }
 
+/* 第五屏媒体查询 */
+@media screen and (max-width: 768px) {
+  .fifth .fifth-content .content-title {
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .fifth .fifth-content .info-border1,
+  .fifth .fifth-content .info-border2 {
+    display: none;
+  }
+  .fifth .fifth-content .content-info,
+  .fifth .fifth-content .content-info ul {
+    width: 100%;
+  }
+  .fifth .fifth-content .content-info li {
+    float: left;
+    font-size: 25px;
+    padding: 30px 0px 0px 35px;
+  }
+  .fifth .fifth-content .info-tel {
+    margin-top: 40px;
+  }
 
+
+}
 
 
 

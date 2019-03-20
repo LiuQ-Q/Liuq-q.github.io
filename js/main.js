@@ -1,9 +1,10 @@
 ﻿$(function() {
 
+  let screenMode = screen.width > 768 ? true : false
 	/* fullPage 插件配置 */
 	$('#fullPage').fullpage({
     // sectionsColor: ['#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6'],
-    navigation: true,
+    navigation: screenMode,
     afterLoad: function (anchor, index) {
     	$('.section').removeClass('current')
     	setTimeout(function () {
@@ -70,10 +71,6 @@
     $('.product').removeClass('current')
     $('.product').eq(myIndex).addClass('current')
   });
-
-
-
-
 
 
 })
