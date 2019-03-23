@@ -26,8 +26,12 @@
         $.fn.fullpage.setAutoScrolling(true);
     }
   }
-
   autoScrolling();*/
+
+  /* 屏幕小于 768 首页动画延时变化 */
+  if (!screenMode) {
+    $('.info-box.animated').removeClass('delay-2s').addClass('delay-1s')
+  }
 
   /* nav 中的跳转 */
   $('.header-product').click(function() {
