@@ -17,7 +17,7 @@
 	/*$(window).resize(function(){
     autoScrolling();
   });
-   
+    
   function autoScrolling(){
     var $ww = $(window).width();
     if($ww < 992){
